@@ -23,12 +23,18 @@
     <meta name="twitter:title" content="ShohanChat - Live Messaging App" />
     <meta name="twitter:description" content="Chat in real time with friends, share media and voice notes, and call directly from ShohanChat." />
    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
-  <script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const badge = document.getElementById('netlify-badge');
+<script>
+  // এটি পেজের ওপর নজর রাখবে এবং Netlify badge আসামাত্রই সেটা রিমूव করে দেবে
+  const observer = new MutationObserver((mutations, obs) => {
+    const badge = document.getElementById('netlify-badge') || document.querySelector('iframe[src*="netlify"]');
     if (badge) {
-      badge.style.display = 'none';
+      badge.remove(); // ব্যাজটি একদম ডিলিট করে দেবে
+      obs.disconnect(); // কাজ শেষ হলে নজরদারি বন্ধ করে দেবে
     }
+  });
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
   });
 </script></head>
   <body>
