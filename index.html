@@ -1,42 +1,15 @@
-<!doctype html>
-<html lang="en">
-  <head><meta name="google-site-verification" content="AHS1WcTul5YDpwy0e0gUeUZqAvhAvyX1HtMmDNy6Cmc" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.svg" />
-    <meta name="theme-color" content="#2563eb" />
-
-    <title>ShohanChat - Live Messaging App</title>
-    <meta name="description" content="ShohanChat is a live messaging app for real-time one-on-one chat, photo and voice-note sharing, personal notes, and audio and video calls." />
-    <meta name="keywords" content="ShohanChat, live messaging, chat app, real-time chat, instant messaging, voice notes, video calls" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="ShohanChat" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="ShohanChat" />
-    <meta property="og:title" content="ShohanChat - Live Messaging App" />
-    <meta property="og:description" content="Chat in real time with friends, share media and voice notes, and call directly from ShohanChat." />
-    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="ShohanChat - Live Messaging App" />
-    <meta name="twitter:description" content="Chat in real time with friends, share media and voice notes, and call directly from ShohanChat." />
-   <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
-<script>
-  // এটি পেজের ওপর নজর রাখবে এবং Netlify badge আসামাত্রই সেটা রিমूव করে দেবে
-  const observer = new MutationObserver((mutations, obs) => {
-    const badge = document.getElementById('netlify-badge') || document.querySelector('iframe[src*="netlify"]');
-    if (badge) {
-      badge.remove(); // ব্যাজটি একদম ডিলিট করে দেবে
-      obs.disconnect(); // কাজ শেষ হলে নজরদারি বন্ধ করে দেবে
-    }
-  });
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true
-  });
-</script></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShohanChat - Live Messaging App</title>
+  <meta name="keywords" content="ShohanChat, Shohan Chat, shohan chating, shohan messaging app, live messaging, shohanchat app" />
+  <meta name="description" content="ShohanChat is a real-time live messaging app to chat with friends, share photos and voice notes securely." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>">
+  <meta property="og:title" content="ShohanChat - Live Messaging App" />
+  <meta property="og:description" content="Real-time live messaging app built for fast communication by Shohan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shohanchat.netlify.app/" />
+</head>
   <body>
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
