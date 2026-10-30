@@ -22,8 +22,15 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="ShohanChat - Live Messaging App" />
     <meta name="twitter:description" content="Chat in real time with friends, share media and voice notes, and call directly from ShohanChat." />
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
-  </head>
+   <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const badge = document.getElementById('netlify-badge');
+    if (badge) {
+      badge.style.display = 'none';
+    }
+  });
+</script></head>
   <body>
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
