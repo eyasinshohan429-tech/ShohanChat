@@ -125,3 +125,7 @@
   bottom: 70px !important;
   right: 20px !important;
 }
+/* মেসেজ বক্সটি যাতে নেটলাইফের লোগোর ওপর না পড়ে, তাই এটিকে একটু ওপরে তুলে দিলাম */
+.chat-footer, form, div[class*="input-container"], div[class*="chat-input"] {
+  margin-bottom: 40px !important;
+}
